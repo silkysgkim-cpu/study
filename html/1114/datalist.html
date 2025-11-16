@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>datalist</title>
+  </head>
+  <body>
+    <!-- input과 select기능이 합쳐져있다. -->
+    <label for="browser">사용하시는 브라우저를 선택하세요.</label> 
+    <!-- datalist와 연결하는 것 list / id -->
+    <input type="text" list="browsers" id="browser">
+    <datalist id="browswers">
+        <option value="Chrome">Chrome</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Edge">Edge</option>
+        <option value="Opera">Opera</option>
+    </datalist>
+    <input type="submit">
+  </body>
+</html>

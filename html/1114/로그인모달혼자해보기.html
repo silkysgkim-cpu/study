@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div>
+        <form method="post" action="">
+            <!-- 아이디 -->
+             <!-- label의 for속성과 input의 id 속성은 서로 같게 입력해주면 스크린리더기에서 
+              사용자가 입력해야하는 내용을 쉽게 알 수 있다. 또한 label을 클릭하여 input을
+              활성화하거나 포커스를 이동할 수 있다. -->
+            <!-- name 속성은 폼 요소에 고유한 이름을 붙이는 것으로 서버가 어떤 데이터인지 식별할 수 있게 한다.
+             input, text, textarea요소에 필수적으로 설정된다. -->
+            <label for="user-id">아이디</label>
+            <input type="text" id="user-id" name="user-id" required>
+            <!-- 아이디입력 끝 -->
+
+            <!-- 비밀번호 시작-->
+            <label for="user-pw">비밀번호</label>
+            <input type="password" id="user-pw"  name="user-pw" placeholder="특수문자 포함 필수" required>
+            <!-- 비밀번호 끝-->
+
+            <!-- 생일 시작-->
+             <label for="birthdate">생일</label>
+             <input type="date" id="birthdate" name="birthdate">
+            <!-- 생일입력 끝 -->
+
+            <!-- 프로필사진 선택 시작-->
+             <label for="profile-picture">프로필사진</label>
+             <input type="file" id="profile-picture" name="profile-picture" accept="img/*">
+             <!-- 프로필사진 선택 끝-->
+
+            <!-- 통신사 입력 시작-->
+             <label for="telecom">통신사</label>
+             <select name="telecom" id="telecom">
+                <option value="SKT">SKT</option>
+                <option value="LG">LG</option>
+                <option value="KT">KT</option>
+             </select>
+             <!-- 통신사 입력 끝-->
+
+             <!-- 연락처 입력 시작-->
+             <label for="contact">연락처</label>
+             <input type="tel" id="contact" name="contact">
+            <!-- 연락처 입력 꿑-->
+             
+            <!-- 라디오 영역(젠더) 시작-->
+             <fieldset>
+              <legend>성별</legend>
+              <label for="gender-male">남성</label>
+              <input type="radio" id="gender-male" name="gender" value="male"> 
+              <label for="gender-female">여성</label>
+              <input type="radio" id="gender-female" name="gender" value="female">
+             </fieldset>
+             <!-- 라디오 영역(젠더) 끝-->
+
+            <!-- 체크박스 영역(기술) 시작-->
+             <fieldset>
+              <legend>사용 기술</legend>
+              <label for="skills-html">HTML</label>
+              <input type="checkbox" id="skills-html" name="skills" value="HTML">
+              <label for="skills-css">CSS</label>
+              <input type="checkbox" id="skills-css" name="skills" value="css">
+              <label for="skills-javascript">JavaScript</label>
+              <input type="checkbox" id="skills-javascript" name="skills" value="javascript">
+              <label for="skills-python">Python</label>
+              <input type="checkbox" id="skills-python" name="skills" value="python"> 
+              <label for="skills-django">Django</label>
+              <input type="checkbox" id="skills-django" name="skills" value="django">
+             </fieldset>
+             <!-- 체크박스 영역(기술) 끝-->
+
+             <!-- 브라우저선택 영역 시작-->
+             <label for="browser"></label>
+             <input type="text" id="browser">
+             <!-- 브라우저선택 영역 끝-->
+
+             <!-- button영역 시작-->
+              <button type="reset">초기화</button>
+              <button type="submit">제출</button>
+              <!-- button영역 끝-->
+        </form>
+        
+    </div>
+  </body>
+</html>
