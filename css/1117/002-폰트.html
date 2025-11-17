@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @font-face {
+        font-family: 'KnpsOdaesan';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-2@1.0/KNPSOdaesan-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Pretendard"; /*font-family : 닉네임*/
+            src: url("./fonts/Pretendard-Regular.woff") format("woff");
+            font-weight: 400;
+            font-style: none;
+        }
+
+        @font-face {
+            font-family: "Pretendard"; /*font-family : 닉네임*/
+            src: url("./fonts/Pretendard-bold.woff") format("woff");
+            font-weight: 700;
+            font-style: none;
+        }
+        /* 보통 실무에서 사용하는 방법 */
+        /* body {
+        font-family: "Pretendard",
+        sans-serif;
+        }
+
+        .bold {
+        font-weight: 700;}
+        */
+
+
+        .nanum {
+        font-family: "Nanum Gothic Coding", monospace;;
+        }
+        .dongle {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .odaesan{
+            font-family: 'KnpsOdaesan', sans-serif;
+        }
+
+        .regular {
+            font-family: "Pretendard", sans-serif;
+            font-weight: 400;
+        }
+
+        .bold {
+            font-family: "Pretendard", sans-serif;
+            font-weight: 700
+        }
+
+        .pixel {
+            font-size: 20px;
+        }
+
+        .parent {
+            font-size: 10px;
+        }
+
+        .em {
+            font-size: 2em;
+        }
+
+        .rem {
+            /* 일반적인 브라우저에서 html의 기본 글꼴 사이즈 16px */
+            font-size: 2rem;
+        }
+
+        /* 실무에서 사용하는 방법 */
+        
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-size: 1.6rem;
+        }
+        
+        .text {
+            font-size: 1rem;
+        }
+    </style>
+  </head>
+  <body>
+    <p>Nanum Pen Script</p>
+    <p class="nanum">Nanum pen Script</p>
+    <p class="dongle">Dongle</p>
+    <p class="odaesan">산, 시냇물, 낙엽</p>
+    <p class="regular">Pretendard Regular</p>
+    <p class="bold">Pretendard Bold</p>
+
+    <div class="parent">
+        <h2>글꼴의 크기</h2>
+        <p class="pixel">픽셀로 적용한 폰트 크기</p>
+        <p class="em">em으로 적용한 폰트 크기</p>
+        <p class="rem">rem으로 적용한 폰트 크기</p>
+        <p class="text">rem을 사용해서 10px을 만들어주세요.</p>
+    </div>
+  </body>
+</html>
