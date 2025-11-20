@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .normal-line-height {
+            line-height: normal;
+        }
+
+        .increased-line-height {
+            line-height: 1.5;
+            /* line-height: 40px;->권장하지 않음. */
+            /* 단위 없는 숫자 방식이 더 유연하고 권장. */
+            span {
+                font-size: 20px;
+                line-height: 1.5em;
+            }
+        }
+
+        .normal-spacing {
+            letter-spacing: normal;
+            text-indent: 2em;
+        }
+
+        .wide-spacing {
+            letter-spacing: 0.5em;
+        }
+
+        .narrow-spacing {
+            letter-spacing: -0.1em;
+
+        }
+    </style>
+  </head>
+  <body>
+    <p class="normal-line-height">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis nostrum in soluta odit mollitia? Corporis distinctio assumenda nemo quia iste vero magni quibusdam, fugiat incidunt libero maxime, deserunt unde officia.
+    </p>
+    <p class="increased-line-height">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda mollitia porro quasi velit officia impedit eius nesciunt, inventore temporibus iure, dolores iste. Earum, totam deserunt numquam eligendi tenetur vitae quis.
+    </p>
+
+    <h2 class="normal-spacing">일반 자간</h2>
+    <h2 class="wide-spacing">넓은 자간</h2>
+    <h2 class="narrow-spacing">좁은 자간</h2>
+  </body>
+</html>
